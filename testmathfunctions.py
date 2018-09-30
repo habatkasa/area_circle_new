@@ -14,6 +14,10 @@ class knownvalues(unittest.TestCase):
         result = mathfunctions.areaCircle(2)
         expected = 12.566370614359172
         self.assertEqual(expected,result)
+    def test_areaCircle_for_0radius(self):
+        result = mathfunctions.areaCircle(0)
+        expected = 0
+        self.assertEqual(expected,result)
 
 
 if __name__ == '__main__':
